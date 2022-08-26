@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className='App'>
-      <TodoList todo={todo} />
+      <TodoList todos={todos} />
     </div>
   );
 }
