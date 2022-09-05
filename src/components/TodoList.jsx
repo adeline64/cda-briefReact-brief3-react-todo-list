@@ -5,7 +5,19 @@ function TodoList(props) {
   return (
     <div>
       <h1>My todo list:</h1>
-      <ul>{/* make the list here */}</ul>
+      <ul>
+        {
+        /* make the list here */
+        // todos.map((todos) => <li key = {todos.id}>{todos.title},{todos.completed}</li>)
+          todos.map((todos)=> 
+            <li
+              key={todos.id}
+            >
+              {todos.title}
+              {todos.completed}
+            </li>)
+        }
+      </ul>
     </div>
   );
 }
